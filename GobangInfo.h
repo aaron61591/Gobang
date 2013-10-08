@@ -13,9 +13,10 @@ using namespace std;
 class GobangInfo {
 
     private:
-        bool status = true;
+        bool status;
         short boardInfo[15][15];
     public:
+        GobangInfo();
         bool getStatus();
         void setStatus(bool);
         short* getBoardInfo();

@@ -15,9 +15,9 @@ using namespace std;
 void printBoardInfo(GobangInfo gobangInfo) {
 
     short *boardInfo = gobangInfo.getBoardInfo();
-    for (int i = 0; i < 15; ++i) {
-        for (int j = 0; j < 15; ++j)
-            cout<<boardInfo[i][j]<<" "<<ends;
+    for (short i = 0; i < 15; ++i) {
+        for (short j = 0; j < 15; ++j)
+            cout<<boardInfo+++i<<" "<<ends;
         cout<<endl;
     }
 }
@@ -28,7 +28,8 @@ int main () {
     GobangServer gobangServer;
     while(cin>>x>>y){
         try {
-            GobangInfo gobangInfo = gobangServer.play(x, y, status);
+            GobangInfo gobangInfo;
+            gobangInfo = gobangServer.play(x, y, status);
             if (!gobangInfo.getStatus()) {
                 cout<<"Game Over"<<endl;
                 break;

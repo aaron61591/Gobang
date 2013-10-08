@@ -11,13 +11,9 @@
 
 using namespace std;
 
-GobangServer::GobangServer() {
-
-}
-
 GobangInfo GobangServer::play(short x, short y, short status) {
 
-    gobangInfo.setBoardInfo(x, y, status);
+    this->gobangInfo.setBoardInfo(x, y, status);
     return this->gobangInfo;
 }
 

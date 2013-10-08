@@ -10,6 +10,11 @@
 
 using namespace std;
 
+GobangInfo::GobangInfo() {
+
+    this->status = true;
+}
+
 bool GobangInfo::getStatus() {
 
     return this->status;
@@ -22,7 +27,9 @@ void GobangInfo::setStatus(bool status) {
 
 short* GobangInfo::getBoardInfo() {
 
-    return this->boardInfo;
+    short (*p)[15] = this->boardInfo;
+    short *p2 = p[0];
+    return p2;
 }
 
 void GobangInfo::setBoardInfo(short x, short y, short status) {

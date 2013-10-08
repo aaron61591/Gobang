@@ -17,7 +17,6 @@ class GobangServer {
     private:
         GobangInfo gobangInfo;
     public:
-        GobangServer();
         GobangInfo play(short, short, short);
         GobangInfo getBoardInfo();
 };
