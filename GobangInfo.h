@@ -8,6 +8,8 @@
 #define GOBANGINFO_H
 
 #include <iostream>
+#include <string.h>
+
 using namespace std;
 
 class GobangInfo {

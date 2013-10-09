@@ -16,8 +16,12 @@ void printBoardInfo(GobangInfo gobangInfo) {
 
     short *boardInfo = gobangInfo.getBoardInfo();
     for (short i = 0; i < 15; ++i) {
-        for (short j = 0; j < 15; ++j)
-            cout<<boardInfo+++i<<" "<<ends;
+        for (short j = 0; j < 15; ++j) {
+            short *tmp = boardInfo++;
+            tmp += i;
+            cout<<*tmp<<" "<<ends;
+        }
+        --boardInfo;
         cout<<endl;
     }
 }
